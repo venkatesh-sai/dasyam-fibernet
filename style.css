@@ -160,7 +160,6 @@ textarea{min-height:140px;resize:vertical}
   *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none}
 }
-/* Professional Navbar Get Connected Button */
 .nav-links a.btn.primary {
     display: inline-flex;
     align-items: center;
@@ -180,12 +179,10 @@ textarea{min-height:140px;resize:vertical}
     transition: all 0.3s ease;
 }
 
-/* Remove navbar underline from button */
 .nav-links a.btn.primary::after {
     display: none;
 }
 
-/* Hover Effect */
 .nav-links a.btn.primary:hover {
     background: transparent;
     color: var(--blue) !important;
@@ -202,4 +199,30 @@ textarea{min-height:140px;resize:vertical}
 }
 #contact-form {
     scroll-margin-top: 100px;
+}
+
+.pricing-grid {
+    display: grid !important;
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+}
+
+.pricing-grid .price-card:nth-child(1),
+.pricing-grid .price-card:nth-child(2),
+.pricing-grid .price-card:nth-child(3),
+.pricing-grid .price-card:nth-child(4) {
+    grid-column: span 3 !important;
+}
+
+.pricing-grid .price-card:nth-child(5),
+.pricing-grid .price-card:nth-child(6),
+.pricing-grid .price-card:nth-child(7) {
+    grid-column: span 4 !important;
+}
+
+.pricing-grid .price-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 100%;
 }
